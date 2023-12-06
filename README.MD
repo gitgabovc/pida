@@ -1,1 +1,1 @@
-<center><h1>PROYECTO DE DATA ANALIST DE SINIESTRO VIALES EN CABA</h1></center>
+<center><h1 style="text-align:center">PROYECTO DE DATA ANALIST DE SINIESTRO VIALES EN CABA</h1></center>
