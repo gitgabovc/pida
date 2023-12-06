@@ -132,3 +132,85 @@ Adicionalmente, se añadieron columnas que ayudan a agrupar los datos, graficar 
 </p>
 - El mayor numero de siniestros ocurrio en el rango etario de adulto, adulto de edad media, adulto mayor y ancianos.<br>
 - Existe muy poca cantidad de victimas de infantes, niños y adolescentes<br><br>
+
+## Recomendaciones para la Seguridad Vial
+
+- Para los meses con mayor accidentes se deberia tomar medidas como incrementar el control vehícular con respecto a otros meses
+- Incentivar al uso de cinturones para los conductores vehiculares, para las motos el uso de cascos y a los peatones darles mayor educacion vial
+- Se recomeinda para estos dias con mayores accidetes fatales se debe aumentar el control vehicular
+- Concientizar a usar los medios de seguridad vial a los conductores y mejorar la educacion vial en los ciudadanos
+- Se debe aumentar el control en estos horarios con mayor pico e incentivar el uso de cascos y cinturones
+- Se recomienda tener mayor reparticion de control vehicular en estas zonas de mayor cantidad 
+- Se recomienda tener mayor reparticion de control vehicular en las avenidas de CABA
+- Se recomienda tener mayor control en el uso de casco y velocidad a los usuarios de motocicleta ya que son los que tienen mas alta probabilidad de ser la victima
+- Se recomienda dar una mayor educacion vial en los peatones ya que son la posicion dos en ser las victimas de los accidentes
+
+- Mayor control en autos ya que son los que generan mayor accidentes
+- Concientizar a los pasajeros para que no cometan actos que provoquen algun accidente
+- Identificar aquellos factores claves por los cuales los pasajeros y conductores generan estos acciedntes ya que pueden ser por un mal mantenimiento vehicular o alguna distraccion y en los pasajeros puede ser por distraer al conductor u otra
+
+- Dar mayor educacion vial al grupo mas alto de victimas fatales
+- Sacar normas que disminuya la cantidad de conductores que tengan un rango etario de ancianos
+
+## Key Performance Indicators (KPI)
+
+Un Key Performance Indicator (KPI) es un indicador clave de rendimiento que proporciona información cuantificable sobre diversos aspectos del desempeño de una organización, un proceso o una actividad. Los KPIs diseñadas para medir el progreso hacia objetivos estratégicos y ayudar en la toma de decisiones informadas. Están vinculados directamente a los objetivos y metas de la entidad, proporcionando una medida clara y tangible del rendimiento.
+
+Para este proyecto se realizo 3 diferentes KPI los cuales se presentan a continuacion.
+
+### 1. Reducción del 10% en la tasa de homicidios en siniestros viales en CABA en comparación con el semestre anterior
+
+En el archivo **03-KPI.ipynb**, se realizó la extracción de información sobre la población desde la página con la URL **https://www.estadisticaciudad.gob.ar/eyc/?p=29329.** Los datos venian en un archivo xls del cual se extrajeron los datos esenciales y se guardaron en formato CSV.
+
+Estos datos de la poblacion de CABA son vitales para poder hallar primero la tasa de victimas fatales por cada cien mil habitantes 
+
+Primero se agrupo los accidentes fatales por cada semestre del año para asi posteriormente usar la siguiente formula:
+<p align="center">
+tasa=(nro_accidentes_semestre/poblacion)*100000
+</p>
+Una vez obtenido la tasa de cada semestre se procedio a comparar el incremento o decremento en la tasa de cada semestre del año
+<p align="center">
+Variacion = ((tasa_actual - tasa_anterior)/tasa_anterior)*100
+</p>
+Por ultimo se realizo el siguiente grafico para ver en que momentos se logro con el objetivo y que semestre no se cumplio
+
+<p align="center">
+  <img src="src/01-kpi.png" alt="Descripción de la imagen">
+</p>
+En este grafico podemos observar que a traves del tiempo el objetivo de disminuir un 10% la tasa con respecto al semestre anterior solo fue cumplida durante 5 semestres los cuales son los años 2017-1, 2019-1, 2019-2, 2020-1 y 2021-2. Ademas se ve un pico demaciado alto en el semestre 2020-2<br>
+Esto se puede deber al covid 19 y el confinamiento
+
+### 2. Reducción del 7% en la cantidad de accidentes mortales de motociclistas en CABA en el último año en comparación con el año anterior
+
+Para poder realizar este KPI primero se procedio a seleccionar solo los accidentes que las victimas estaban en motocicleta y posteriormente se procedio a agrupar la cantidad de victimas por cada año.
+
+La formula utilizada para obtener el incremento o decremento de los accidentes es la siguiente:
+<p align="center">
+Variacion = ((nro_vict_motos - nro_vict_motos_anterior)/nro_vict_motos_anterior)*100
+</p>
+
+Por ultimo se realizo el siguiente grafico para ver en que momentos se logro con el objetivo y que años no se cumplio 
+<p align="center">
+  <img src="src/02-kpi.png" alt="Descripción de la imagen">
+</p>
+
+- En el grafico se puede ver que el objetivo propuesto de reducir un 7% en los accidentes con con moto fueron cumplidos en los años 2017, 2019 y 2020
+- El mayor año que s elogro una reduccion siginificativa fue durante el año 2020, si bine los otros años se redugieron estos se logro de forma dificil
+- Un crecimiento de accidentes se puede ver en el año 2021 en el cual ocurrio un alto crecimeinto en la tasa de victimas en motos.
+
+### 3. Reducción del 10% en la cantidad de accidentes mortales que ocurren en avenidas en CABA en comparacion con el año anterior
+
+Para poder realizar este KPI primero se procedio a seleccionar solo los accidentes que las victimas ocurrieron en avenidas y posteriormente se procedio a agrupar la cantidad de victimas por cada año.
+
+La formula utilizada para obtener el incremento o decremento de los accidentes en avenidas es la siguiente:
+<p align="center">
+Variacion = ((nro_vict_avenidas - nro_vict_avenidas_anterior)/nro_vict_avenidas_anterior)*100
+</p>
+
+Por ultimo se realizo el siguiente grafico para ver en que momentos se logro con el objetivo y que años no se cumplio 
+<p align="center">
+  <img src="src/03-kpi.png" alt="Descripción de la imagen">
+</p>
+
+Se puede evidenciar que para los años 2017, 2019 y 2020 estos objetivo si se lograron cumplir por eso se considera una meta alcanzable para los proximos años<br>
+Sin embargo, se puede notar un gran creciemiento en el año 2021 lo cual es un incremento muy alto y debe ser tratado las causas de este incremento
