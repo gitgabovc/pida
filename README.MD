@@ -11,23 +11,20 @@ Las autoridades locales suelen llevar a cabo la recopilación y el análisis de 
 
 Los accidentes de tránsito no solo representan una amenaza para la seguridad de los ciudadanos, sino que también tienen un impacto significativo en la sociedad y la economía en general. Entre las consecuencias se incluyen pérdidas humanas, lesiones, costos médicos, daños a la propiedad y congestión del tráfico. Estos aspectos subrayan la importancia de abordar la seguridad vial de manera integral.
 
-## Proyecto de Análisis Exploratorio
+## Introducción
 
 Con el objetivo de abordar la problemática de los accidentes de tránsito, se lleva a cabo un proyecto que incluye:
 
-1. **Análisis Exploratorio de Datos:**
-   - Se explora la información proporcionada por el gobierno de CABA para comprender la naturaleza y las características de los accidentes.
-
-2. **Limpieza de Datos y Transformaciones:**
+1. **Limpieza de Datos y Transformaciones:**
    - Se realiza una limpieza de la información recopilada y se aplican transformaciones necesarias para obtener datos claros y valiosos.
 
-3. **Extracción de Información Valiosa:**
-   - Se extraen insights y patrones relevantes que pueden ser fundamentales para la formulación de estrategias de prevención.
+2. **Análisis Exploratorio de Datos:**
+   - Se explora la información proporcionada por el gobierno de CABA para comprender la naturaleza y las características de los accidentes.
 
-4. **Recomendaciones para la Seguridad Vial:**
+3. **Recomendaciones para la Seguridad Vial:**
    - Se ofrecen recomendaciones basadas en los hallazgos del análisis exploratorio y la información extraída.
 
-5. **Key Performance Indicators (KPI):**
+4. **Key Performance Indicators (KPI):**
    - Se presentarán KPI que permitirán evaluar el cumplimiento de los objetivos de seguridad vial a lo largo del tiempo.
 
 Este enfoque integral busca no solo entender la problemática de los accidentes de tránsito en CABA, sino también proponer soluciones efectivas y medir el progreso a través de indicadores clave a lo largo de los años.
@@ -54,103 +51,111 @@ Adicionalmente, se añadieron columnas que ayudan a agrupar los datos, graficar 
 
 ## Análisis Exploratorio de Datos
 
-**1. Evolucion de los accidentes en los diferentes años**
-<p align="center">
-  <img src="src/1-eda.png" alt="Descripción de la imagen">
-</p>
-    - Se puede evidenciar que se tiene informacion desde los años 2016 y 2021 sobre las victimas fatales.<br>
-    - Entre el año 2016 y 2018 se puede ver cambios pequeños en la cantidad de victimas fatales.<br>
-    - Para el año 2019 y 2020 existe una disminucion significativa en la cantidad de vistimas fatales con respecto a los años anteriores, esto puede deberse principalmente a que se entro a una pandemia y las personas no podian salir de sus casas<br>
-    - En el año 2021 se puede ver un aumento significativo y esto puede deberse a que se debio permitir una disminucion de las restricciones de salida debido a los efectos de la pandemia<br><br>
+Todos los procedimientos y obtención de gráficas se llevaron a cabo en el archivo **02-EDA.ipynb**.
 
-**2. Distribucion de los accidentes ocurridos en cada mes**
+ **1. Evolución de los accidentes en los diferentes años**
 <p align="center">
-  <img src="src/2-eda.png" alt="Descripción de la imagen">
+  <img src="src/1-eda.png" alt="Gráfico de evolución de accidentes">
 </p>
-- Los meses con mas accidentes fatales ocurren durante los meses segun el siguiente orden diciembre, noviembre, agosto y enero<br>
-- Los meses con menos accidentes fatales son abril, julio y septiembre<br>
-- Los motivos de que esos meses que ocurren mayores accidentes pueden ocurrir porque son meses mas comerciales <br> <br>
 
-**3. Accidentes que ocurren durante el dia de la semana**
-<p align="center">
-  <img src="src/3-eda.png" alt="Descripción de la imagen">
-</p>
-- Los dias de la semana con mayor accidentes eon vistimas fatales son los dias sabado, domingo, y lunes<br>
-- Al ser dia lunes un incio de semana existe una gran movilizacion de peatones y esta puede ser la razon de los accidentes<br>
-- Los dias sabados y domingos son dias en los cuales la gente sale a fiestas, a pasear con la familia <br><br>
+- Información disponible desde 2016 hasta 2021 sobre víctimas fatales.
+- Cambios pequeños entre 2016 y 2018.
+- Disminución significativa en 2019 y 2020, posiblemente debido a la pandemia.
+- Aumento en 2021, quizás por relajación de restricciones.
 
-**4. Cantidad de ccidentes que ocurren en cada hora**
+**2. Distribución de los accidentes ocurridos en cada mes**
 <p align="center">
-  <img src="src/4-eda.png" alt="Descripción de la imagen">
+  <img src="src/2-eda.png" alt="Gráfico de distribución mensual de accidentes">
 </p>
-- Las horas con mayor cantidad de accidentes fatales ocurren en los siguientes horarios 5 a 9 de la mañana<br>
-- Los horarios mas bajos de accidentes son de 0 a 4 de la madrugada<br>
-- Tambien se ve que esta dividido en dos partes desde las 0 hasta las 13 pm y de las 14 hasta las 23 pm, sin embargo el mayor pico se encuentra en el medio de estos horarios en especial en el primer intervalo <br><br>
+
+- Meses con más accidentes fatales: diciembre, noviembre, agosto y enero.
+- Meses con menos accidentes fatales: abril, julio y septiembre.
+- Posible relación de mayores accidentes en meses comerciales.
+
+**3. Accidentes que ocurren durante el día de la semana**
+<p align="center">
+  <img src="src/3-eda.png" alt="Gráfico de accidentes por día de la semana">
+</p>
+
+- Días con más accidentes fatales: sábado, domingo y lunes.
+- El lunes, al ser el inicio de semana, muestra una movilización considerable de peatones.
+- Sábados y domingos, días de mayor actividad social.
+
+**4. Cantidad de accidentes que ocurren en cada hora**
+<p align="center">
+  <img src="src/4-eda.png" alt="Gráfico de accidentes por hora">
+</p>
+
+- Horas con mayor cantidad de accidentes fatales: 5 a 9 de la mañana.
+- Horas más bajas de accidentes: 0 a 4 de la madrugada.
+- Picos notables entre las 0-13 pm y 14-23 pm, con mayor concentración en el primer intervalo.
 
 **5. Comuna y cantidad de accidentes**
 <p align="center">
-  <img src="src/5-eda.png" alt="Descripción de la imagen">
+  <img src="src/5-eda.png" alt="Gráfico de accidentes por comuna">
 </p>
 
-- Las horas con mayor cantidad de accidentes fatales ocurren en los siguientes horarios 5 a 9 de la mañana<br>
-- Los horarios mas bajos de accidentes son de 0 a 4 de la madrugada<br>
-- Tambien se ve que esta dividido en dos partes desde las 0 hasta las 13 pm y de las 14 hasta las 23 pm, sin embargo el mayor pico se encuentra en el medio de estos horarios en especial en el primer intervalo <br><br>
-
+- Las comunas 0 corresponden a lugares sin coordenadas exactas, especialmente en autopistas.
 
 **6. Tipo de calle y cantidad de accidentes**
 <p align="center">
-  <img src="src/6-eda.png" alt="Descripción de la imagen">
+  <img src="src/6-eda.png" alt="Gráfico de accidentes por tipo de calle">
 </p>
-- Donde ocurre mayor accidentes son en las avenidas de una forma significativa y una parte en las calles<br>
-- Donde estan los menores son en las autopistas y general paz<br><br>
 
-**7. Tipo de victima y cantidad de accidentes**
+- Mayor cantidad de accidentes ocurren en avenidas significativamente, con menor incidencia en autopistas y General Paz.
+
+**7. Tipo de víctima y cantidad de accidentes**
 <p align="center">
-  <img src="src/7-eda.png" alt="Descripción de la imagen">
+  <img src="src/7-eda.png" alt="Gráfico de accidentes por tipo de víctima">
 </p>
-- Las victimas de estos accidentes fatales son en su mayoria motos, peatones y automoviles <br>
-- Las motos y los peatones se puededn considerar mas propensos a morir en un accidente debido a que el impacto puede ser mas directo al cuerpo
-<br><br>
+
+- Víctimas mayoritarias: motociclistas, peatones y automovilistas.
+- Motociclistas y peatones pueden ser más propensos a fallecer debido al impacto directo.
 
 **8. Acusado y cantidad de accidentes**
 <p align="center">
-  <img src="src/8-eda.png" alt="Descripción de la imagen">
+  <img src="src/8-eda.png" alt="Gráfico de accidentes por tipo de acusado">
 </p>
-- En el grafico se puede ver que los acusados de el hecho en mayor medida son en el siguiente orden auto, pasajeros y cargas.<br>
-- Se puede evidenciar una gran cantidad de pasajeros son acusados del accidente porque deben generar algun tipo de imprudencia.
-<br><br>
 
-**9. Genero y cantidad de accidentes**
+- Acusados en orden: automóviles, pasajeros y vehículos de carga.
+- Notable cantidad de pasajeros acusados, posiblemente por imprudencias.
+
+**9. Género y cantidad de accidentes**
 <p align="center">
-  <img src="src/9-eda.png" alt="Descripción de la imagen">
+  <img src="src/9-eda.png" alt="Gráfico de accidentes por género">
 </p>
-- La mayor parte de las victimas fueron en gran medida del genero masculino con un 77% y el 23% son mujeres<br><br>
+
+- Mayor parte de las víctimas fueron hombres (77%) y mujeres representan el 23%.
 
 **10. Rango etario y cantidad de accidentes**
 <p align="center">
-  <img src="src/10-eda.png" alt="Descripción de la imagen">
+  <img src="src/10-eda.png" alt="Gráfico de accidentes por rango etario">
 </p>
-- El mayor numero de siniestros ocurrio en el rango etario de adulto, adulto de edad media, adulto mayor y ancianos.<br>
-- Existe muy poca cantidad de victimas de infantes, niños y adolescentes<br><br>
+
+- Mayor número de siniestros ocurrió en el rango etario de adulto, adulto de edad media, adulto mayor y ancianos.
+- Poca cantidad de víctimas de infantes, niños y adolescentes.
 
 ## Recomendaciones para la Seguridad Vial
 
-- Para los meses con mayor accidentes se deberia tomar medidas como incrementar el control vehícular con respecto a otros meses
-- Incentivar al uso de cinturones para los conductores vehiculares, para las motos el uso de cascos y a los peatones darles mayor educacion vial
-- Se recomeinda para estos dias con mayores accidetes fatales se debe aumentar el control vehicular
-- Concientizar a usar los medios de seguridad vial a los conductores y mejorar la educacion vial en los ciudadanos
-- Se debe aumentar el control en estos horarios con mayor pico e incentivar el uso de cascos y cinturones
-- Se recomienda tener mayor reparticion de control vehicular en estas zonas de mayor cantidad 
-- Se recomienda tener mayor reparticion de control vehicular en las avenidas de CABA
-- Se recomienda tener mayor control en el uso de casco y velocidad a los usuarios de motocicleta ya que son los que tienen mas alta probabilidad de ser la victima
-- Se recomienda dar una mayor educacion vial en los peatones ya que son la posicion dos en ser las victimas de los accidentes
 
-- Mayor control en autos ya que son los que generan mayor accidentes
-- Concientizar a los pasajeros para que no cometan actos que provoquen algun accidente
-- Identificar aquellos factores claves por los cuales los pasajeros y conductores generan estos acciedntes ya que pueden ser por un mal mantenimiento vehicular o alguna distraccion y en los pasajeros puede ser por distraer al conductor u otra
+- Se sugiere tomar medidas adicionales durante los meses con mayor cantidad de accidentes, como intensificar los controles vehiculares en comparación con otros meses.
+- Recomendamos que, en los días con mayor incidencia de accidentes, se implementen mejores controles vehiculares, como el fomento del uso de cascos y cinturones.
+- Es fundamental concientizar a los conductores sobre la importancia de utilizar los dispositivos de seguridad vial y mejorar la educación vial entre los ciudadanos.
+- Se debe aumentar la vigilancia durante los horarios con mayor pico de accidentes e incentivar el uso de cascos y cinturones.
+- Se aconseja realizar una distribución equitativa de los controles vehiculares en las comunas con mayor número de accidentes fatales.
+- Recomendamos intensificar los controles vehiculares en las avenidas, ya que son los lugares donde ocurren la mayoría de los accidentes.
+- Se sugiere implementar un mayor control en el uso de cascos y la velocidad para los usuarios de motocicletas, ya que tienen una probabilidad más alta de ser víctimas fatales en los accidentes.
+- Es recomendable brindar una mayor educación vial a los peatones, ya que ocupan la segunda posición como víctimas fatales en los accidentes.
+- Se sugiere un mayor control en los conductores de automóviles, ya que son los responsables de la mayoría de los accidentes.
+- Es importante concientizar a los pasajeros para que eviten acciones que puedan provocar accidentes de tránsito.
+- Identificar los factores clave por los cuales pasajeros y conductores generan estos accidentes, ya que pueden deberse a un mantenimiento deficiente del vehículo o distracciones. En el caso de los pasajeros, puede deberse a distracciones que afectan al conductor u otras razones.
+- Se recomienda proporcionar una mayor educación vial al grupo etario más avanzado, que representa víctimas frecuentes en accidentes fatales.
+- Considerar la implementación de normativas que reduzcan la cantidad de conductores en el rango etario de ancianos.
 
-- Dar mayor educacion vial al grupo mas alto de victimas fatales
-- Sacar normas que disminuya la cantidad de conductores que tengan un rango etario de ancianos
+
+
+
+
 
 ## Key Performance Indicators (KPI)
 
@@ -162,55 +167,70 @@ Para este proyecto se realizo 3 diferentes KPI los cuales se presentan a continu
 
 En el archivo **03-KPI.ipynb**, se realizó la extracción de información sobre la población desde la página con la URL **https://www.estadisticaciudad.gob.ar/eyc/?p=29329.** Los datos venian en un archivo xls del cual se extrajeron los datos esenciales y se guardaron en formato CSV.
 
-Estos datos de la poblacion de CABA son vitales para poder hallar primero la tasa de victimas fatales por cada cien mil habitantes 
 
-Primero se agrupo los accidentes fatales por cada semestre del año para asi posteriormente usar la siguiente formula:
+Los datos de población de CABA son cruciales para calcular la tasa de víctimas fatales por cada cien mil habitantes.
+
+En primer lugar, se agruparon los accidentes fatales por semestre del año para luego utilizar la siguiente fórmula:
+
 <p align="center">
 tasa=(nro_accidentes_semestre/poblacion)*100000
 </p>
-Una vez obtenido la tasa de cada semestre se procedio a comparar el incremento o decremento en la tasa de cada semestre del año
+Una vez obtenida la tasa para cada semestre, se procedió a comparar el incremento o decremento en la tasa de cada semestre del año mediante la fórmula:
+
 <p align="center">
 Variacion = ((tasa_actual - tasa_anterior)/tasa_anterior)*100
 </p>
-Por ultimo se realizo el siguiente grafico para ver en que momentos se logro con el objetivo y que semestre no se cumplio
+Finalmente, se generó el siguiente gráfico para visualizar los momentos en que se logró el objetivo y en qué semestres no se cumplió:
 
 <p align="center">
-  <img src="src/01-kpi.png" alt="Descripción de la imagen">
+  <img src="src/01-kpi.png" alt="Gráfico de variación de tasa de víctimas fatales por semestre">
 </p>
-En este grafico podemos observar que a traves del tiempo el objetivo de disminuir un 10% la tasa con respecto al semestre anterior solo fue cumplida durante 5 semestres los cuales son los años 2017-1, 2019-1, 2019-2, 2020-1 y 2021-2. Ademas se ve un pico demaciado alto en el semestre 2020-2<br>
-Esto se puede deber al covid 19 y el confinamiento
+
+En este gráfico, se observa que a lo largo del tiempo, el objetivo de disminuir un 10% la tasa con respecto al semestre anterior solo se cumplió durante 5 semestres: 2017-1, 2019-1, 2019-2, 2020-1 y 2021-2. Además, se identifica un pico muy alto en el semestre 2020-2, que podría estar relacionado con la pandemia de COVID-19 y las medidas de confinamiento.
 
 ### 2. Reducción del 7% en la cantidad de accidentes mortales de motociclistas en CABA en el último año en comparación con el año anterior
 
-Para poder realizar este KPI primero se procedio a seleccionar solo los accidentes que las victimas estaban en motocicleta y posteriormente se procedio a agrupar la cantidad de victimas por cada año.
 
-La formula utilizada para obtener el incremento o decremento de los accidentes es la siguiente:
+Para realizar este KPI, se seleccionaron inicialmente solo los accidentes en los que las víctimas se encontraban en motocicleta. Luego, se procedió a agrupar la cantidad de víctimas por año.
+
+La fórmula utilizada para calcular el incremento o decremento de los accidentes es la siguiente:
+
 <p align="center">
 Variacion = ((nro_vict_motos - nro_vict_motos_anterior)/nro_vict_motos_anterior)*100
 </p>
 
-Por ultimo se realizo el siguiente grafico para ver en que momentos se logro con el objetivo y que años no se cumplio 
+Finalmente, se generó el siguiente gráfico para visualizar los momentos en que se logró el objetivo y en qué años no se cumplió:
+
 <p align="center">
-  <img src="src/02-kpi.png" alt="Descripción de la imagen">
+  <img src="src/02-kpi.png" alt="Gráfico de variación de accidentes con víctimas en motocicletas por año">
 </p>
 
-- En el grafico se puede ver que el objetivo propuesto de reducir un 7% en los accidentes con con moto fueron cumplidos en los años 2017, 2019 y 2020
-- El mayor año que s elogro una reduccion siginificativa fue durante el año 2020, si bine los otros años se redugieron estos se logro de forma dificil
-- Un crecimiento de accidentes se puede ver en el año 2021 en el cual ocurrio un alto crecimeinto en la tasa de victimas en motos.
+- En el gráfico, se observa que el objetivo propuesto de reducir un 7% en los accidentes con motocicletas se cumplió en los años 2017, 2019 y 2020.
+- El año en el que se logró una reducción significativa fue 2020, aunque los otros años también experimentaron disminuciones, esta se logró de manera más desafiante.
+- Se evidencia un crecimiento de accidentes en el año 2021, con un notable aumento en la tasa de víctimas en motocicletas.
+
+
+
+
+
+
 
 ### 3. Reducción del 10% en la cantidad de accidentes mortales que ocurren en avenidas en CABA en comparacion con el año anterior
 
-Para poder realizar este KPI primero se procedio a seleccionar solo los accidentes que las victimas ocurrieron en avenidas y posteriormente se procedio a agrupar la cantidad de victimas por cada año.
 
-La formula utilizada para obtener el incremento o decremento de los accidentes en avenidas es la siguiente:
+
+Para llevar a cabo este KPI, primero se seleccionaron los accidentes en los que las víctimas ocurrieron en avenidas. Luego, se procedió a agrupar la cantidad de víctimas por cada año.
+
+La fórmula utilizada para calcular el incremento o decremento de los accidentes en avenidas es la siguiente:
+
 <p align="center">
 Variacion = ((nro_vict_avenidas - nro_vict_avenidas_anterior)/nro_vict_avenidas_anterior)*100
 </p>
 
-Por ultimo se realizo el siguiente grafico para ver en que momentos se logro con el objetivo y que años no se cumplio 
+Finalmente, se generó el siguiente gráfico para visualizar los momentos en que se logró el objetivo y en qué años no se cumplió:
+
 <p align="center">
-  <img src="src/03-kpi.png" alt="Descripción de la imagen">
+  <img src="src/03-kpi.png" alt="Gráfico de variación de accidentes con víctimas en avenidas por año">
 </p>
 
-Se puede evidenciar que para los años 2017, 2019 y 2020 estos objetivo si se lograron cumplir por eso se considera una meta alcanzable para los proximos años<br>
-Sin embargo, se puede notar un gran creciemiento en el año 2021 lo cual es un incremento muy alto y debe ser tratado las causas de este incremento
+Se evidencia que los objetivos para los años 2017, 2019 y 2020 fueron alcanzados, considerándose metas realizables para los próximos años. Sin embargo, se observa un notable crecimiento en el año 2021, lo cual representa un aumento significativo y debe ser analizado en detalle para identificar las posibles causas de este incremento.
