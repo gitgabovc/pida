@@ -1,5 +1,4 @@
-<center><h1 style="text-align:center">PROYECTO DE DATA ANALIST DE SINIESTRO VIALES EN CABA</h1></center>
-
+# <p align="center">PROYECTO DE DATA ANALIST DE SINIESTRO VIALES EN CABA</p>
 
 Ciudad Autónoma de Buenos Aires (CABA), siendo una de las áreas urbanas más grandes de Argentina, enfrenta desafíos significativos relacionados con la seguridad vial debido a la alta densidad de tráfico. Este entorno urbano congestionado y dinámico puede contribuir a una incidencia considerable de accidentes de tránsito.
 
@@ -52,6 +51,11 @@ Adicionalmente, se añadieron columnas que ayudan a agrupar los datos, graficar 
 ## Análisis Exploratorio de Datos
 
 Todos los procedimientos y obtención de gráficas se llevaron a cabo en el archivo **02-EDA.ipynb**.
+
+Para este analisis comenzamos mostrando un mapa de calor de CABA en donde se podra observar que las zonas con color que más se acerca al rojo o es rojo son las principales ubicaciones donde ocurren mayor cantidad de accidentes y los mas cercanos a verde y azul son las que se encuentran menos cantidad. En el gráfico de observa que en las partes más bajas de CABA es donde el color es más intenso.
+<p align="center">
+  <img src="src/mapa_calor_caba.jpg" alt="mapa" width="500" height="500">
+</p>
 
  **1. Evolución de los accidentes en los diferentes años**
 <p align="center">
