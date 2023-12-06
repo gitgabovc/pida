@@ -61,4 +61,74 @@ Adicionalmente, se añadieron columnas que ayudan a agrupar los datos, graficar 
     - Se puede evidenciar que se tiene informacion desde los años 2016 y 2021 sobre las victimas fatales.<br>
     - Entre el año 2016 y 2018 se puede ver cambios pequeños en la cantidad de victimas fatales.<br>
     - Para el año 2019 y 2020 existe una disminucion significativa en la cantidad de vistimas fatales con respecto a los años anteriores, esto puede deberse principalmente a que se entro a una pandemia y las personas no podian salir de sus casas<br>
-    - En el año 2021 se puede ver un aumento significativo y esto puede deberse a que se debio permitir una disminucion de las restricciones de salida debido a los efectos de la pandemia<br>
+    - En el año 2021 se puede ver un aumento significativo y esto puede deberse a que se debio permitir una disminucion de las restricciones de salida debido a los efectos de la pandemia<br><br>
+
+**2. Distribucion de los accidentes ocurridos en cada mes**
+<p align="center">
+  <img src="src/2-eda.png" alt="Descripción de la imagen">
+</p>
+- Los meses con mas accidentes fatales ocurren durante los meses segun el siguiente orden diciembre, noviembre, agosto y enero<br>
+- Los meses con menos accidentes fatales son abril, julio y septiembre<br>
+- Los motivos de que esos meses que ocurren mayores accidentes pueden ocurrir porque son meses mas comerciales <br> <br>
+
+**3. Accidentes que ocurren durante el dia de la semana**
+<p align="center">
+  <img src="src/3-eda.png" alt="Descripción de la imagen">
+</p>
+- Los dias de la semana con mayor accidentes eon vistimas fatales son los dias sabado, domingo, y lunes<br>
+- Al ser dia lunes un incio de semana existe una gran movilizacion de peatones y esta puede ser la razon de los accidentes<br>
+- Los dias sabados y domingos son dias en los cuales la gente sale a fiestas, a pasear con la familia <br><br>
+
+**4. Cantidad de ccidentes que ocurren en cada hora**
+<p align="center">
+  <img src="src/4-eda.png" alt="Descripción de la imagen">
+</p>
+- Las horas con mayor cantidad de accidentes fatales ocurren en los siguientes horarios 5 a 9 de la mañana<br>
+- Los horarios mas bajos de accidentes son de 0 a 4 de la madrugada<br>
+- Tambien se ve que esta dividido en dos partes desde las 0 hasta las 13 pm y de las 14 hasta las 23 pm, sin embargo el mayor pico se encuentra en el medio de estos horarios en especial en el primer intervalo <br><br>
+
+**5. Comuna y cantidad de accidentes**
+<p align="center">
+  <img src="src/5-eda.png" alt="Descripción de la imagen">
+</p>
+
+- Las horas con mayor cantidad de accidentes fatales ocurren en los siguientes horarios 5 a 9 de la mañana<br>
+- Los horarios mas bajos de accidentes son de 0 a 4 de la madrugada<br>
+- Tambien se ve que esta dividido en dos partes desde las 0 hasta las 13 pm y de las 14 hasta las 23 pm, sin embargo el mayor pico se encuentra en el medio de estos horarios en especial en el primer intervalo <br><br>
+
+
+**6. Tipo de calle y cantidad de accidentes**
+<p align="center">
+  <img src="src/6-eda.png" alt="Descripción de la imagen">
+</p>
+- Donde ocurre mayor accidentes son en las avenidas de una forma significativa y una parte en las calles<br>
+- Donde estan los menores son en las autopistas y general paz<br><br>
+
+**7. Tipo de victima y cantidad de accidentes**
+<p align="center">
+  <img src="src/7-eda.png" alt="Descripción de la imagen">
+</p>
+- Las victimas de estos accidentes fatales son en su mayoria motos, peatones y automoviles <br>
+- Las motos y los peatones se puededn considerar mas propensos a morir en un accidente debido a que el impacto puede ser mas directo al cuerpo
+<br><br>
+
+**8. Acusado y cantidad de accidentes**
+<p align="center">
+  <img src="src/8-eda.png" alt="Descripción de la imagen">
+</p>
+- En el grafico se puede ver que los acusados de el hecho en mayor medida son en el siguiente orden auto, pasajeros y cargas.<br>
+- Se puede evidenciar una gran cantidad de pasajeros son acusados del accidente porque deben generar algun tipo de imprudencia.
+<br><br>
+
+**9. Genero y cantidad de accidentes**
+<p align="center">
+  <img src="src/9-eda.png" alt="Descripción de la imagen">
+</p>
+- La mayor parte de las victimas fueron en gran medida del genero masculino con un 77% y el 23% son mujeres<br><br>
+
+**10. Rango etario y cantidad de accidentes**
+<p align="center">
+  <img src="src/10-eda.png" alt="Descripción de la imagen">
+</p>
+- El mayor numero de siniestros ocurrio en el rango etario de adulto, adulto de edad media, adulto mayor y ancianos.<br>
+- Existe muy poca cantidad de victimas de infantes, niños y adolescentes<br><br>
